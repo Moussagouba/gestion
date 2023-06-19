@@ -1,7 +1,7 @@
 
 <?php
-include('header.php');
-echo "header.php";
+
+
 // Vérifie si le formulaire a été soumis
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   // Récupère les valeurs soumises
