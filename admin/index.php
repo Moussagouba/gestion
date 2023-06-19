@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>insertions dans la base de donnee</title>
 </head>
@@ -19,7 +19,7 @@
                     </h3>
                 </div>
                 <div class="card-body">
-                    <form action="ajout.php" method="post">
+                    <form action="formulaire_admin.php" method="post">
                         <div class="mb-3">
                             <label for="nom">nom</label>
                             <input type="text" name="nom" class="form-control" required>
@@ -29,20 +29,15 @@
                             <input type="text" name="prenom" class="form-control" required>
                         </div>
                         <div class="mb-3">
-                            <label for="bday"> veuillez saisir la date de naissance</label>
-                            <input type="date" name="bday" required pattern="\d{4}-\d{2}-\d{2}">
-                            <span class="validity"></span>
+                         <label for="email">email:</label>
+                        <input type="email" placeholder="veuillez saisir votre email" name="email"><br><br>
+                        </div>
+                         <div class="mb-3">
+                        <label for="mot_de_passe">MOT DE PASSE:</label>
+                        <input type="password" placeholder="veuillez saisir votre mot de passe" name="mot_de_passe" required><br><br>
                         </div>
                         <div class="mb-3">
-                            <label for="ville">ville</label>
-                            <input type="text" name="ville" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="skill">formation de base</label>
-                            <input type="text" name="skill" class="form-control" required>
-                        </div>
-                        <div class="mb-3">
-                           <button type="submit" name="sousmettre" class="btn btn-primary">SOUSMETTRE</button>
+                           <button type="submit" name="admin" class="btn btn-primary">SOUSMETTRE</button>
                     </form>
                 </div>
             </div>
